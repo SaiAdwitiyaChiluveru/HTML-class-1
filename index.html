@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS styling example</title>
-    <!-- Internal CSS -->
-<style>
- h2{
-    color: green;
- }
-</style>
-<link rel="stylesheet" href="style.css">
-
+    <title>Document</title>
+    <style>
+        @keyframes example {
+            0%{
+                background-color: red;
+            }
+            25%{
+                background-color: yellow;
+            }
+            50%{
+                background-color: blue;
+            }
+            100%{
+                background-color: green;
+            }
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+    </style>
 </head>
 <body>
-    <hr>
-   <h1 style="color: red;" >Inline CSS example</h1> 
-   <h2> Internal CSS example</h2>
-   <h3>External CSS example</h3>
-   <hr>
-
-
-   <hr>
-   <h4>Element Selecter example</h4>
-   <hr>
-   <h2 class="Myclass">Class selecter example</h2>
-   <h2 id="MyID"> ID Selecter example</h2>
-   <hr>
-   <h5 >Group Selecter example</h5>
-   <p>Group Selecter example</p>
-   <hr>
-
+    <div>
+        hi
+    </div>
 </body>
 </html>
