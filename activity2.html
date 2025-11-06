@@ -3,28 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Opacity</title>
+    <style>
+        div{
+          background-color: #4CAF50;
+          padding: 10px;
+        }
+        div.first{
+            opacity: 0.1;
+        }
+        div.second{
+            opacity: 0.3;
+        }
+        div.third{
+            opacity: 0.6;
+        }
+    </style>
 </head>
 <body>
-    <form action="">
-        <fieldset>
-            <legend>Personal Information</legend>
-            <label for="">Full name</label>
-            <input type="text">
-            <br>
-            <br>
-            <label for=""> Email </label>
-            <input type="text">
-            <br>
-            <br>
-            <label for="">Gender</label>
-            <input type="radio">female
-            <input type="radio">male
-            <br>
-            <br>
-            <label for="">Birthday</label>
-            <input type="date">
-        </fieldset>
-    </form>
+    <h1> The Opacty Property</h1>
+    <p> This is how this property looks/p>
+        <div class="first">
+            <p> Opacity 0.1</p>
+        </div>
+        <div class="second">
+            <p> Opacity 0.3</p>
+        </div>
+        <div class="third">
+            <p> Opacity 0.6</p>
+        </div>
+        <div>
+            <p> Opacity 1 default</p>
+        </div>
 </body>
 </html>
