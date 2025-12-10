@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-    </head>
+<html>
     <body>
-        <button onclick="myfunction(5)"> Excecute JS Function </button>
+        <h2>JavaScript String Methods</h2>
+        <p>Basic Methods</p>
         <script>
-            function myfunction(x, y)
-            {
-                if (y=== undefined)  {
-                       y= 2;
-                          }
-                document.write(x*y);
-            }
+            var str= "AmAzInG";
+            document.write(str.toUpperCase());
+            document.write("<br>");
+            document.write(str.toLowerCase());
+            document.write("<br>");
+            document.write(str.startsWith('i'));
+            document.write("<br>");
+
+            var str1="I learnt about Methods";
+            var patt=new RegExp("about");
+            var res= patt.test(str1);
+            document.write(res);
         </script>
     </body>
-  </html>
+</html>
+
+
+
+
+
+
+
+
