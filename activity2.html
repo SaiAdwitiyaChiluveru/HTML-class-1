@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-   <html>
-     <body>
-        <p>A function can access variables defined inside the function:</p>
-        <button type="button" onclick="myFunction()"> Click Me! </button>
+<html>
+    <body>
+        <h2>Javascript Loop</h2>
         <p id="demo"></p>
-        <p id="demo1"></p>
         <script>
+            var fruits = ["Apple", "Mango", "Grapes", "Watermelon", "Jack Fruit", "Banana"];
 
-            var b= 5;
-            function myFunction() {
-                var a= 4;
-                document.getElementById("demo").innerHTML = b * a;
+
+            for(i=0; i < fruits.length; i++)   {
+                var text= fruits[i] + ("<br>");
+
+             document.write(text);
             }
-            document.getElementById("demo1").innerHTML = a;
-            document.getElementById("demo1").innerHTML = b;
         </script>
-     </body>
-   </html>
+    </body>
+</html>
+
+
+
+
+
