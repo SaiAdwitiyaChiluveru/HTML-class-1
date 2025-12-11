@@ -1,29 +1,18 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <h2>JavaScript String Methods</h2>
-        <p>Basic Methods</p>
+        <h2>Javascript Objects and its Properties</h2>
+        <p>There are two different ways to access an object property </p>
+        <p>You can use .property or ["property"].</p>
+        <p id="demo"></p>
         <script>
-            var str= "AmAzInG";
-            document.write(str.toUpperCase());
-            document.write("<br>");
-            document.write(str.toLowerCase());
-            document.write("<br>");
-            document.write(str.startsWith('i'));
-            document.write("<br>");
+            var person = {
+                firstname: "Sai Adwitiya",
+                age: 11, 
 
-            var str1="I learnt about Methods";
-            var patt=new RegExp("about");
-            var res= patt.test(str1);
-            document.write(res);
+            };
+            document.getElementById("demo").innerHTML = person.firstname + " am "  + person.age + "years old";
+            
         </script>
     </body>
 </html>
-
-
-
-
-
-
-
-
