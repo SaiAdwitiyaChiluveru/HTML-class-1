@@ -1,30 +1,29 @@
 <!DOCTYPE html>
- <html>
+<html>
 
-  <head>
-     <title> Data Types</title>
-   </head>
-
-   <body>
-     <h1>JavaScript Data Types</h1>
-     <script>
-        var a = 8;
-        var b = 10;
-        var d = null;
-        var e;
-        {
-            let a = 2;
-            const b = 8;
+<body>
+    <h2>Javascript Class</h2>
+    <p>How to use a Javascript class.</p>
+    <p id="student1"></p>
+    <p id="student2"></p>
+    <script>
+        class student {
+            constructor(name,year) {
+                this.name = name;
+                this.year = year;
+            }
+            age() {
+                let date = new Date();
+                return date.getFullYear() - this.year; 
+            }
         }
-        document.write("a and b are equal : " + (a == b));
-        document.write("<br>");
-        document.write("The value of d is : " + d);
-        document.write("<br>");
-        document.write("The value of e is : " + e);
-        document.write("<br>");
-        document.write("The value of a is : " + a);
-        document.write("<br>");
-        document.write("The value of b is : " + b);
-     </script>
-   </body>
- </html>
+        student1 = new student("Sai Adwitiya", 2014)
+        document.getElementById("student1").innerHTML = 
+        "My name is " + student1.name + ". I was born in " + student1.year + ". And my age is " + student1.age();
+
+         student2 = new student("Mihika", 2015)
+        document.getElementById("student2").innerHTML = 
+        "My name is " + student2.name + ". I was born in " + student2.year + ". And my age is " + student2.age();
+    </script>
+</body>
+</html>
