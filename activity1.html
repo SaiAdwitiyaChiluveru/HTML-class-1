@@ -2,28 +2,22 @@
 <html>
 
 <body>
-    <h2>Javascript Class</h2>
-    <p>How to use a Javascript class.</p>
-    <p id="student1"></p>
-    <p id="student2"></p>
+    <h2>Javascript Array Sort</h2>
+    <p>Click the button to sort the array in ascending order</p>
+    <button onclick="ascending()">Ascending Order</button>
+    <button onclick="descending()">Descending Order</button>
+    <p id="result"></p>
     <script>
-        class student {
-            constructor(name,year) {
-                this.name = name;
-                this.year = year;
-            }
-            age() {
-                let date = new Date();
-                return date.getFullYear() - this.year; 
-            }
+        var points = [ 40, 100, 1, 5, 25, 10];
+        document.getElementById("result").innerHTML = points;
+        function ascending() {
+            points.sort(function (a,b) { return a - b }); 
+            document.getElementById("result").innerHTML = points;
         }
-        student1 = new student("Sai Adwitiya", 2014)
-        document.getElementById("student1").innerHTML = 
-        "My name is " + student1.name + ". I was born in " + student1.year + ". And my age is " + student1.age();
-
-         student2 = new student("Mihika", 2015)
-        document.getElementById("student2").innerHTML = 
-        "My name is " + student2.name + ". I was born in " + student2.year + ". And my age is " + student2.age();
+         function descending() {
+            points.sort(function (a,b) { return b - a }); 
+            document.getElementById("result").innerHTML = points;
+        }
     </script>
 </body>
 </html>
