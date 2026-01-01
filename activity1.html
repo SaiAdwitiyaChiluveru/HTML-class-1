@@ -2,22 +2,15 @@
 <html>
 
 <body>
-    <h2>Javascript Array Sort</h2>
-    <p>Click the button to sort the array in ascending order</p>
-    <button onclick="ascending()">Ascending Order</button>
-    <button onclick="descending()">Descending Order</button>
-    <p id="result"></p>
-    <script>
-        var points = [ 40, 100, 1, 5, 25, 10];
-        document.getElementById("result").innerHTML = points;
-        function ascending() {
-            points.sort(function (a,b) { return a - b }); 
-            document.getElementById("result").innerHTML = points;
-        }
-         function descending() {
-            points.sort(function (a,b) { return b - a }); 
-            document.getElementById("result").innerHTML = points;
-        }
-    </script>
+    <h2> The Javascript String() Method</h2>
+    <p>The String() method can convert a number to a string.</p>
+    <p id="number_result"></p>
+     <p id="string_result"></p>
+     <script>
+        var x = 70;
+        var y = 90;
+        document.getElementById("number_result").innerHTML = x+y;
+        document.getElementById("string_result").innerHTML = String(x) + String(y);
+     </script>
 </body>
 </html>
