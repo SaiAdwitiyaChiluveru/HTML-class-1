@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
-
 <body>
-    <h2> The Javascript String() Method</h2>
-    <p>The String() method can convert a number to a string.</p>
-    <p id="number_result"></p>
-     <p id="string_result"></p>
-     <script>
-        var x = 70;
-        var y = 90;
-        document.getElementById("number_result").innerHTML = x+y;
-        document.getElementById("string_result").innerHTML = String(x) + String(y);
-     </script>
+    <h2>Convert a JavaScript object into a JSON string, and send it to the server.</h2>
+    <p id="result"></p>
+    <script>
+        var myObj = { name : "Sai Adwitiya_test", age:11, grade:6 };
+        var myJSON = JSON.stringify(myObj);
+        var newObj = JSON.parse(myJSON);
+        document.getElementById("result").innerHTML = newObj.name;
+    </script>
 </body>
 </html>

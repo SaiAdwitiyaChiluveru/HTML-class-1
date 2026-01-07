@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <h2>Javascript Error Handling</h2>
-        <p>This example demonstrates how to use <b>catch</b> to display an error.</p>
-        <p id="error_message"></p>
-        <script>
-            try {
-                addalert("Welcome guest!")
+        <h2>Javascript async / await</h2>
+        <h1 id="result"></h1>
+        <script> 
+            async function add(a,b) {
+                let response = await a + b;
+                display(response);
             }
-            catch(err) {
-                document.getElementById("error_message").innerHTML = err.message;
+            function display(some) {
+                document.getElementById("result").innerHTML = some;
             }
+            add(5,20);
         </script>
     </body>
 </html>

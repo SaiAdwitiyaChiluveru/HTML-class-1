@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <h2>Javascript Arrow Function</h2>
-        <p>This example shows an Arrow Function with a parameter.</p>
+        <h2>Javascript Callbacks</h2>
+        <p>Do a caluclation and then display the result.</p>
         <p id="result"></p>
         <script>
-            add = ( a,b) => a + b;
-            document.getElementById("result").innerHTML = add( 10,60 );
+            function myDisplayer(value) {
+                document.getElementById("result").innerHTML = value;
+            }
+            function myCalculator( num1, num2, myCallback ) {
+                let sum = num1 + num2;
+                 myCallback(sum);
+            }
+            myCalculator( 5, 5, myDisplayer)
         </script>
     </body>
 </html>
